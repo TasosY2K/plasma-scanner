@@ -7,7 +7,7 @@ from pyfiglet import Figlet
 print(Figlet(font='Graffiti').renderText('plasma-scanner'))
 
 api_url = "http://localhost:3000"
-api_token = "0d90c954-a7f7-48e2-8bb4-de22e80d8616"
+api_token = "416c41ac-f05f-48d5-ad5f-8b04952b7394"
 
 def GetIP():
 	ip = ""
@@ -61,7 +61,7 @@ def Loop():
 
 if __name__ == '__main__':
 	if (CheckConnection(api_url, api_token)):
-		for i in range(75):
+		for i in range(400):
 			threading.Thread(target=Loop).start()
 	else:
 		sys.exit()
